@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO en Stea... (v5)</title>
+  <!-- Open Graph (Discord, Facebook...) -->
+  <meta property="og:type" content="video.other">
+  <meta property="og:url" content="https://yeroi.github.io/amegosegalo/boton/">
+  <meta property="og:site_name" content="YouTube">
+  <meta property="og:description" content="Zeer">
+  <meta property="og:title" content="Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO en Stea...">
+  <meta property="og:image" content="https://i.imgur.com/4ctnecp.png?v=5" id="meta-og-image">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <!-- Twitter Card por compatibilidad -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO en Stea...">
+  <meta name="twitter:description" content="Zeer">
+  <meta name="twitter:image" content="https://i.imgur.com/4ctnecp.png?v=5" id="meta-twitter-image">
+  <meta name="twitter:url" content="https://yeroi.github.io/amegosegalo/boton/">
+  <script>
+    function aumentarVersion() {
+      // Obtener los metas
+      const metaOgImage = document.getElementById('meta-og-image');
+      const metaTwitterImage = document.getElementById('meta-twitter-image');
+      let url = metaOgImage.getAttribute('content');
+      let match = url.match(/v=(\d+)/);
+      let version = match ? parseInt(match[1], 10) : 5;
+      let nuevaVersion = version + 1;
+      let nuevaUrl = url.replace(/v=\d+/, 'v=' + nuevaVersion);
+
+      // Cambiar los metas
+      metaOgImage.setAttribute('content', nuevaUrl);
+      metaTwitterImage.setAttribute('content', nuevaUrl);
+
+      // Cambiar el texto y la imagen en la página
+      document.getElementById('version-text').innerText = 'v' + nuevaVersion;
+      document.getElementById('img-preview').src = nuevaUrl;
+      document.getElementById('url-preview').innerText = nuevaUrl;
+
+      // Cambiar el título
+      document.title = "Robé TODOS... (v" + nuevaVersion + ")";
+    }
+  </script>
+</head>
+<body>
+  <h1>Preview estilo YouTube en Discord (<span id="version-text">v5</span>)</h1>
+  <p>Esta es la versión <b><span id="version-text">v5</span></b> de la preview.<br>
+     Pulsa el botón para subir la versión del cache buster:<br>
+     <button onclick="aumentarVersion()">Subir versión</button>
+  </p>
+  <img id="img-preview" src="https://i.imgur.com/4ctnecp.png?v=5" width="320" alt="Preview imagen"/>
+  <p>URL actual de la imagen:<br>
+    <code id="url-preview">https://i.imgur.com/4ctnecp.png?v=5</code>
+  </p>
+  <p>
+    <b>¿Cómo usar esto?</b><br>
+    1. Pulsa el botón hasta que la versión sea la que quieras.<br>
+    2. Haz <b>clic derecho → Ver código fuente</b> y copia el HTML.<br>
+    3. Sube ese HTML a la carpeta de la versión (por ejemplo, <code>/v6/index.html</code>) en tu repo.<br>
+    4. ¡Comparte ese link en Discord y tendrás la preview actualizada!
+  </p>
+</body>
+</html>
