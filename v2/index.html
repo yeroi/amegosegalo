@@ -3,38 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Embed Responsivo</title>
+  <title>Embed Simulado</title>
   <style>
-    /* Contenedor responsivo 16:9 */
-    .video-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #2c2f33;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
     }
-
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .embed {
+      background-color: #23272a;
+      border-left: 5px solid #ff0000; /* color del embed */
+      border-radius: 5px;
       width: 100%;
-      height: 100%;
-      border: 0;
+      max-width: 600px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .author {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .author img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .author a {
+      color: #ffffff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .title a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .image img {
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Mi video embed de YouTube</h1>
-  
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/YktG89nwJ-I" 
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" 
-      allowfullscreen>
-      <small>Powered by <a href="https://embed.tube/embed-code-generator/youtube/">youtube embed video</a> generator</small>
-    </iframe>
+  <div class="embed">
+    <div class="author">
+      <img src="https://yt3.ggpht.com/x8CZZU4J2SAbk-zpUxnV_v8oH5RQQeMWt1UQwV6VQ1T_DdMHzLEk4vWpRC21n-XYGRGxruzFLw=s48-c-k-c0x00ffffff-no-rj" alt="Zeer">
+      <a href="https://www.youtube.com/watch?v=YktG89nwJ-I" target="_blank">Zeer</a>
+    </div>
+    <div class="title">
+      <a href="https://www.youtube.com/watch?v=YktG89nwJ-I" target="_blank">
+        Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO en Steal a brainrot (roba un brainrot)
+      </a>
+    </div>
+    <div class="image">
+      <img src="https://i.imgur.com/gy49Hk3.jpeg" alt="Embed Image">
+    </div>
   </div>
-
 </body>
 </html>
