@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zeer">
+  <meta name="description" content="Zeer - JumpScare Experience">
 
   <title>Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO</title>
 
@@ -11,42 +11,25 @@
   <meta property="og:type" content="video.other">
   <meta property="og:url" content="https://yeroi.github.io/amegosegalo/v5/">
   <meta property="og:site_name" content="Zeers">
-  <meta property="og:title" content="Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO en Stea...">
+  <meta property="og:title" content="Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO">
+  <meta property="og:description" content="Disfruta de la experiencia JumpScare en esta página.">
   <meta property="og:image" content="https://i.imgur.com/4ctnecp.png?v=7" id="meta-og-image">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="720">
 
-  <!-- Twitter Card por compatibilidad -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO en Stea...">
+  <meta name="twitter:title" content="Robé TODOS los BRAINROTS SUPREMOS del NUEVO EVENTO SECRETO">
+  <meta name="twitter:description" content="Disfruta de la experiencia JumpScare en esta página.">
   <meta name="twitter:image" content="https://i.imgur.com/4ctnecp.png?v=8" id="meta-twitter-image">
   <meta name="twitter:url" content="https://yeroi.github.io/amegosegalo/v5/">
 
   <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <img src="kitty-kat-etcetera-etcetera.jpg" alt="is this the next rapper out of Atlanta?">
+<h1>Haz clic para empezar</h1>
+<button id="startBtn">Iniciar Experiencia</button>
 
-  <script>
-    // 1. Abrir ventana emergente al cargar
-    window.addEventListener("load", function() {
-      window.open(window.location.href, "_blank", "width=600,height=400");
-    });
-
-    // 2. Confirmación al intentar cerrar o recargar
-    window.addEventListener("beforeunload", function (e) {
-      const confirmationMessage = "¿Estás seguro de que quieres salir de la página?";
-      e.preventDefault();
-      e.returnValue = confirmationMessage;
-      return confirmationMessage;
-    });
-
-    // 3. Reproducir sonido repetitivamente
-    const audio = new Audio('3ed22d14f3c30bc4.mp3');
-    audio.loop = true; // Se repetirá indefinidamente
-    audio.play().catch(err => {
-      console.log("El autoplay puede estar bloqueado por el navegador:", err);
-    });
-  </script>
+<script src="script.js" defer></script>
 </body>
 </html>
