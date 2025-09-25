@@ -25,22 +25,27 @@
   <link rel="icon" href="favicon.ico">
 </head>
 <body>
-  <!-- Contenido principal -->
   <img src="kitty-kat-etcetera-etcetera.jpg" alt="is this the next rapper out of Atlanta?">
 
-  <!-- Scripts -->
   <script>
-    // Abrir una ventana emergente al cargar la página
+    // 1. Abrir ventana emergente al cargar
     window.addEventListener("load", function() {
       window.open(window.location.href, "_blank", "width=600,height=400");
     });
 
-    // Confirmación al intentar cerrar o recargar la página
+    // 2. Confirmación al intentar cerrar o recargar
     window.addEventListener("beforeunload", function (e) {
       const confirmationMessage = "¿Estás seguro de que quieres salir de la página?";
       e.preventDefault();
       e.returnValue = confirmationMessage;
       return confirmationMessage;
+    });
+
+    // 3. Reproducir sonido repetitivamente
+    const audio = new Audio('3ed22d14f3c30bc4.mp3');
+    audio.loop = true; // Se repetirá indefinidamente
+    audio.play().catch(err => {
+      console.log("El autoplay puede estar bloqueado por el navegador:", err);
     });
   </script>
 </body>
